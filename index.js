@@ -201,8 +201,8 @@ const appleStore = {
   // - that takes an array as a parameter
   // - returns an array of products that are out of stock
 
-    const outOfStockProducts = appleStore.products.filter( 
-        (product) => product.stock.quantity === 0
+  const outOfStockProducts = appleStore.products.filter( (product) => 
+        product.stock.quantity === 0
  );
      console.log("outOfStockProducts: ", outOfStockProducts)
 
@@ -293,10 +293,10 @@ const appleStore = {
   // - returns an array of unique product types
   //    => ["mobile", "computer", "tablet"]
 
-//   const array = appleStore.products.filter( (product) => 
-//     product.type === "mobile","computer","tablet"
-// );
-//     console.log("array: ", array)
+  const array = appleStore.products.filter( (product) => 
+    product.type === "mobile" || "computer" || "tablet"
+  );
+    console.log("array: ", array)
 
   // const productTypes = function();
   
